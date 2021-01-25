@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
   useragent = '';
+  app_version = '';
   constructor() {}
 
   ngOnInit(): void {
     this.useragent = navigator.userAgent;
+    this.app_version = navigator.appVersion;
   }
 }
